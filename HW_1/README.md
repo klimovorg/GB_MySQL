@@ -10,10 +10,13 @@
 
 ##  Скриншот поднятой БД:
 На скриншоте показан запущенный контейнер с БД  
-![Alt Text](Screenshot.png)
+![MySQL](Screenshot.png)
 
 ##  Скриншот mysql workbench:
-![Alt Text](workbench_.png)
+![workbench](workbench_.png)
+
+##  Скриншот dbeaver:
+![dbeaver](dbeaver.png)
 
 ##  Dockerfile
 ```Dockerfile
