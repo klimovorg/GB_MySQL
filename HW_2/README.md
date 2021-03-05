@@ -73,6 +73,31 @@
     ``` 
     Результат: 
     ![1](dump.png) 
+
+    Создаем схему:
+    ```sql
+        CREATE DATABASE IF NOT EXISTS sample
+        CHARACTER SET utf8
+        COLLATE utf8_general_ci;
+    ```
+    Разворачиваем дамп:
+    ```bash
+    #!/bin/bash
+
+    # Настройки
+    DB_BACKUP_PATH=${HOME}"/Desktop"
+    MYSQL_HOST="127.0.0.1"
+    MYSQL_PORT='15123'
+    MYSQL_USER='root'
+    MYSQL_PASSWORD='3534535345435'
+    DATABASE_NAME='sample'
+    DUMP_NAME="dump.sql"
+
+
+    mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD} ${DATABASE_NAME} < ${DUMP_NAME};
+    ```
+    Проверяем: 
+    ![1](dump_out.png) 
 1.  
 
 

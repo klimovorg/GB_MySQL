@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Настройки
+DB_BACKUP_PATH=${HOME}"/Desktop"
+MYSQL_HOST="127.0.0.1"
+MYSQL_PORT='15123'
+MYSQL_USER='root'
+MYSQL_PASSWORD='3453535345'
+DATABASE_NAME='sample'
+DUMP_NAME="dump.sql"
+
+
+mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD} ${DATABASE_NAME} < ${DUMP_NAME};
