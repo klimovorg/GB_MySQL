@@ -50,8 +50,7 @@
     ```sql
     insert into users(users_name)
     values ('Вася'),('Петя'),('Юра'),('Маша');
-    ```
-)
+    ```  
 1.  
 1.  
 
