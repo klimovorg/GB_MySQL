@@ -51,7 +51,7 @@
     insert into users(users_name)
     values ('Вася'),('Петя'),('Юра'),('Маша');
     ```  
-1.  Дампа БД
+1.  Дамп БД  
     Скрипт для создания дампа БД (фаил dump.sh):
     ```bash
     #!/bin/bash
@@ -96,7 +96,7 @@
 
     mysql -u ${MYSQL_USER} -p${MYSQL_PASSWORD} ${DATABASE_NAME} < ${DUMP_NAME};
     ```
-    Проверяем: 
+    Проверяем:   
     ![1](dump_out.png) 
 1.  
 
