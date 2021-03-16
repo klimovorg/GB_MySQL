@@ -64,11 +64,11 @@ INSERT INTO media_types (name) VALUES ('Image'), ('Video'), ('Audio');
 
 -- Перенесем данные из users
 UPDATE profiles p
-SET
-  p.first_name = (SELECT u.first_name FROM users u WHERE id = p.user_id),  
-  p.last_name = (SELECT u.last_name FROM users u WHERE id = p.user_id),  
-  p.patronymic_name = (SELECT u.first_name FROM users u WHERE id = p.user_id)
+SET p.first_name      = (SELECT u.first_name FROM users u WHERE id = p.user_id),
+    p.last_name       = (SELECT u.last_name FROM users u WHERE id = p.user_id),
+    p.patronymic_name = (SELECT u.first_name FROM users u WHERE id = p.user_id)
 ;
+
 
 SELECT id FROM gender ORDER BY rand() LIMIT 1;
 -- Заполним пол случайными значениями из справочника
